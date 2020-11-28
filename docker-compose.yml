@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  db:
+    image: mysql:latest
+    container_name: MySQL_DataBase
+    ports:
+      - "33001:3306"
+    cap_add:
+      - SYS_NICE
+    environment:
+      MYSQL_ROOT_PASSWORD:  Marielle
+      MYSQL_DATABASE: carparts
+
